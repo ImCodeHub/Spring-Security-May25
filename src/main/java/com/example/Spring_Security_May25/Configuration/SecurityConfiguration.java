@@ -30,6 +30,8 @@ public class SecurityConfiguration {
     @Autowired
     private final JwtFilter jwtFilter;
 
+    /**
+     * 1. remember to add '/' ini the beginning of the prefix API (RequestMapping) */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
